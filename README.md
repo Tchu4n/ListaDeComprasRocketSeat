@@ -2,28 +2,63 @@
 
 # 🛒 Quicklist
 
-**Uma lista de compras simples, rápida e acessível — feita com HTML, CSS e JavaScript puros.**
+**Projeto de estudo da [Rocketseat](https://www.rocketseat.com.br/): uma lista de compras feita com HTML, CSS e JavaScript puros, para praticar os fundamentos do desenvolvimento web.**
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Rocketseat](https://img.shields.io/badge/Rocketseat-CA3884?style=for-the-badge&logo=rocket&logoColor=white)
+![Status](https://img.shields.io/badge/status-em%20estudo-CA3884?style=for-the-badge)
 
 </div>
 
 <!-- Adicione um print da aplicação aqui: ![Quicklist](./preview.png) -->
 
-## ✨ Funcionalidades
+## 🎯 Sobre o projeto
 
-- ➕ **Adicionar itens** à lista pelo campo de texto (Enter ou botão)
-- ✅ **Marcar itens** como comprados com um checkbox
-- 🗑️ **Remover itens** com aviso temporário de confirmação (some em 3s ou ao clicar em fechar)
-- ⚠️ **Validação** que impede adicionar itens vazios, com mensagem de erro
-- ♿ **Acessível**: labels para leitores de tela, `aria-live`, `aria-invalid` e `role="alert"`
+O Quicklist é um **projeto educacional**. A ideia não é criar um produto completo: é usar um problema simples e do dia a dia (montar a lista de compras da semana) para praticar o que é a base de qualquer aplicação web:
+
+- estruturar uma página com **HTML semântico**;
+- estilizar uma interface a partir de um layout com **CSS**;
+- dar vida à página com **JavaScript**, manipulando o DOM e reagindo às ações do usuário.
+
+Por isso o projeto não usa nenhum framework, biblioteca ou ferramenta de build. Tudo é feito "na mão", para entender o que acontece por baixo dos panos.
+
+## 🧩 O desafio
+
+Construir uma lista de compras em que a pessoa usuária consiga:
+
+- [x] Adicionar um novo item pelo campo de texto
+- [x] Marcar um item como comprado
+- [x] Remover um item da lista
+- [x] Ver um aviso de que o item foi removido, que some sozinho ou ao clicar em fechar
+- [x] Receber uma mensagem de erro ao tentar adicionar um item vazio
+
+## 📚 O que foi praticado
+
+### HTML
+- Estrutura semântica com `header`, `main`, `form`, `ul` e `li`
+- Formulários: `label` associado ao `input`, `button type="submit"`
+- Acessibilidade: `aria-label`, `aria-live`, `aria-invalid`, `role="alert"` e a classe `.sr-only` para leitores de tela
+- Ícones em SVG inline
+
+### CSS
+- Variáveis CSS (`:root`) para cores, raio e fonte
+- Reset básico e `box-sizing: border-box`
+- Estados visuais: `:hover`, `:focus`, item concluído e campo com erro
+- Uso do atributo `[hidden]` para mostrar e esconder elementos
+
+### JavaScript
+- Seleção de elementos com `getElementById` e `querySelector`
+- Criação de elementos com `createElement`, `append` e `cloneNode`
+- Eventos `submit`, `input`, `change` e `click`, com `preventDefault`
+- **Delegação de eventos**: um único listener na lista atende inclusive os itens criados depois
+- `closest()` para encontrar o item a partir do botão clicado
+- `setTimeout` e `clearTimeout` para controlar o tempo do alerta
+- Validação de entrada com `trim()`
 
 ## 🚀 Como executar
 
-Não há dependências nem build. Basta clonar e abrir no navegador:
+Não há dependências nem build. Basta clonar o repositório:
 
 ```bash
 git clone https://github.com/Tchu4n/https---github.com-Tchu4n-ListaDeCompras-RocketSeat.git
@@ -41,23 +76,15 @@ Depois abra o `index.html` no navegador (ou use a extensão **Live Server** do V
  ┗ ⚙️ script.js    # Lógica de adicionar, marcar e remover itens
 ```
 
-## 🎨 Paleta
+## 🌱 Próximos passos de estudo
 
-| Cor | Hex | Uso |
-|-----|-----|-----|
-| ![#CA3884](https://placehold.co/16x16/CA3884/CA3884.png) | `#CA3884` | Primária |
-| ![#D93636](https://placehold.co/16x16/D93636/D93636.png) | `#D93636` | Erro / alerta |
-| ![#1C1C1C](https://placehold.co/16x16/1C1C1C/1C1C1C.png) | `#1C1C1C` | Texto |
-| ![#F6F6F9](https://placehold.co/16x16/F6F6F9/F6F6F9.png) | `#F6F6F9` | Fundo |
+Ideias para continuar praticando a partir deste projeto:
 
-Fonte: [Inter](https://fonts.google.com/specimen/Inter)
-
-## 📚 Aprendizados
-
-- Manipulação do DOM com `createElement`, `append` e `closest`
-- **Delegação de eventos** na lista para itens criados dinamicamente
-- Validação de formulário e feedback acessível
-- Organização de estilos com variáveis CSS (`:root`)
+- [ ] Salvar a lista no `localStorage` para ela não sumir ao recarregar a página
+- [ ] Permitir editar o nome de um item
+- [ ] Mostrar um contador de itens pendentes
+- [ ] Botão para limpar os itens já comprados
+- [ ] Publicar o projeto no GitHub Pages
 
 ---
 
