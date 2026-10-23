@@ -11,8 +11,6 @@
 
 </div>
 
-<!-- Adicione um print da aplicação aqui: ![Quicklist](./preview.png) -->
-
 ## 🎯 Sobre o projeto
 
 O Quicklist é um **projeto educacional**. A ideia não é criar um produto completo: é usar um problema simples e do dia a dia (montar a lista de compras da semana) para praticar o que é a base de qualquer aplicação web:
@@ -55,38 +53,6 @@ Construir uma lista de compras em que a pessoa usuária consiga:
 - `closest()` para encontrar o item a partir do botão clicado
 - `setTimeout` e `clearTimeout` para controlar o tempo do alerta
 - Validação de entrada com `trim()`
-
-## 🚀 Como executar
-
-Não há dependências nem build. Basta clonar o repositório:
-
-```bash
-git clone https://github.com/Tchu4n/https---github.com-Tchu4n-ListaDeCompras-RocketSeat.git
-cd https---github.com-Tchu4n-ListaDeCompras-RocketSeat
-```
-
-Depois abra o `index.html` no navegador (ou use a extensão **Live Server** do VS Code).
-
-## 📁 Estrutura
-
-```
-📦 ListaDeCompras
- ┣ 📜 index.html   # Estrutura da página
- ┣ 🎨 style.css    # Estilos e variáveis de tema
- ┗ ⚙️ script.js    # Lógica de adicionar, marcar e remover itens
-```
-
-## 🌱 Próximos passos de estudo
-
-Ideias para continuar praticando a partir deste projeto:
-
-- [ ] Salvar a lista no `localStorage` para ela não sumir ao recarregar a página
-- [ ] Permitir editar o nome de um item
-- [ ] Mostrar um contador de itens pendentes
-- [ ] Botão para limpar os itens já comprados
-- [ ] Publicar o projeto no GitHub Pages
-
----
 
 <div align="center">
 
