@@ -53,9 +53,3 @@ Construir uma lista de compras em que a pessoa usuária consiga:
 - `closest()` para encontrar o item a partir do botão clicado
 - `setTimeout` e `clearTimeout` para controlar o tempo do alerta
 - Validação de entrada com `trim()`
-
-<div align="center">
-
-Feito com 💜 por [Tchu4n](https://github.com/Tchu4n) durante os estudos na [Rocketseat](https://www.rocketseat.com.br/)
-
-</div>
